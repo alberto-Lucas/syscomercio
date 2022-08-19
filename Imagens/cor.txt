@@ -1,0 +1,5 @@
+cinza: 109;129;140
+cinza claro: 143;163;173
+cinza mais claro: 205;2015;2019
+laraja: 255;177;0
+

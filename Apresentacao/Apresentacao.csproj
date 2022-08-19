@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D8DC5139-0962-4B26-BE7F-F4853D086D68}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Apresentacao</RootNamespace>
+    <AssemblyName>SysComercio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icone.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\..\..\..\..\..\Documents\Desenvolvimento\DLL\Bunifu\crack\Bunifu 1.8.0.1 Winforms And Dataviz\Bunifu_UI_WinForms_1.8.0.1_Downloadly.ir\Bunifu UI WinForms 1.8.0.1\Bunifu UI WinForms 1.8.0.1\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcaoNaTela.cs" />
+    <Compile Include="FrmAlterarQuantidadeItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlterarQuantidadeItem.Designer.cs">
+      <DependentUpon>FrmAlterarQuantidadeItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClienteCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClienteCadastro.Designer.cs">
+      <DependentUpon>FrmClienteCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCupomVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCupomVenda.Designer.cs">
+      <DependentUpon>FrmCupomVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFornecedorCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFornecedorCadastro.Designer.cs">
+      <DependentUpon>FrmFornecedorCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFornecedorSelecao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFornecedorSelecao.Designer.cs">
+      <DependentUpon>FrmFornecedorSelecao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGrupoCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGrupoCadastro.Designer.cs">
+      <DependentUpon>FrmGrupoCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGrupoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGrupoUsuario.Designer.cs">
+      <DependentUpon>FrmGrupoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLancamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLancamento.Designer.cs">
+      <DependentUpon>FrmLancamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLojaCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLojaCadastro.Designer.cs">
+      <DependentUpon>FrmLojaCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPagamento.Designer.cs">
+      <DependentUpon>FrmPagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProdutoCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProdutoCadastro.Designer.cs">
+      <DependentUpon>FrmProdutoCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProdutoSelecao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProdutoSelecao.Designer.cs">
+      <DependentUpon>FrmProdutoSelecao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClienteSelecao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClienteSelecao.Designer.cs">
+      <DependentUpon>FrmClienteSelecao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelatorio.Designer.cs">
+      <DependentUpon>FrmRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSobre.Designer.cs">
+      <DependentUpon>FrmSobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.Designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarioCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarioCadastro.Designer.cs">
+      <DependentUpon>FrmUsuarioCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarioSelecao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarioSelecao.Designer.cs">
+      <DependentUpon>FrmUsuarioSelecao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerarEan13.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sysDataSet.cs">
+      <DependentUpon>sysDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sysDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sysDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="usrEndereco.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrEndereco.Designer.cs">
+      <DependentUpon>usrEndereco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usrTelefone.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usrTelefone.Designer.cs">
+      <DependentUpon>usrTelefone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="FrmCupomVenda.resx">
+      <DependentUpon>FrmCupomVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGrupoCadastro.resx">
+      <DependentUpon>FrmGrupoCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGrupoUsuario.resx">
+      <DependentUpon>FrmGrupoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\CupomNaoFiscal - BKP.rdlc" />
+    <EmbeddedResource Include="FrmAlterarQuantidadeItem.resx">
+      <DependentUpon>FrmAlterarQuantidadeItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClienteCadastro.resx">
+      <DependentUpon>FrmClienteCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFornecedorCadastro.resx">
+      <DependentUpon>FrmFornecedorCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFornecedorSelecao.resx">
+      <DependentUpon>FrmFornecedorSelecao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLancamento.resx">
+      <DependentUpon>FrmLancamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLojaCadastro.resx">
+      <DependentUpon>FrmLojaCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPagamento.resx">
+      <DependentUpon>FrmPagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProdutoCadastro.resx">
+      <DependentUpon>FrmProdutoCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProdutoSelecao.resx">
+      <DependentUpon>FrmProdutoSelecao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClienteSelecao.resx">
+      <DependentUpon>FrmClienteSelecao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelatorio.resx">
+      <DependentUpon>FrmRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSobre.resx">
+      <DependentUpon>FrmSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarioCadastro.resx">
+      <DependentUpon>FrmUsuarioCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarioSelecao.resx">
+      <DependentUpon>FrmUsuarioSelecao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Relatorio\RelCliente.rdlc" />
+    <EmbeddedResource Include="Relatorio\RelFornecedor.rdlc" />
+    <EmbeddedResource Include="Relatorio\RelProduto.rdlc" />
+    <EmbeddedResource Include="Relatorio\RelUsuario.rdlc" />
+    <EmbeddedResource Include="Relatorio\RelVenda.rdlc" />
+    <EmbeddedResource Include="Relatorio\CupomNaoFiscal.rdlc" />
+    <EmbeddedResource Include="usrEndereco.resx">
+      <DependentUpon>usrEndereco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrTelefone.resx">
+      <DependentUpon>usrTelefone.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="sysDataSet.xsc">
+      <DependentUpon>sysDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sysDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sysDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sysDataSet.xss">
+      <DependentUpon>sysDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icone.ico" />
+    <None Include="Resources\icons8_User_28px1.png" />
+    <None Include="Resources\icons8_User_28px.png" />
+    <None Include="Resources\icons8_Purchase_Order_30px_1 - Copia.png" />
+    <None Include="Resources\icons8_Product_28px.png" />
+    <None Include="Resources\icons8_Product_30px1.png" />
+    <None Include="Resources\icons8_Trolley_30px_1 - Copia.png" />
+    <None Include="Resources\icons8_Check_File_30px.png" />
+    <None Include="Resources\icons8_Double_Down_30px.png" />
+    <None Include="Resources\icons8_User_30px_10.png" />
+    <None Include="Resources\icons8_Exit_30px_11.png" />
+    <None Include="Resources\icons8_Unavailable_30px.png" />
+    <None Include="Resources\icons8_Save_30px.png" />
+    <None Include="Resources\icons8_View_30px.png" />
+    <None Include="Resources\icons8_New_Copy_30px.png" />
+    <None Include="Resources\icons8_Edit_File_30px.png" />
+    <None Include="Resources\icons8_Delete_File_30px.png" />
+    <None Include="Resources\icons8_Search_30px.png" />
+    <None Include="Resources\icons8_Search_25px.png" />
+    <None Include="Resources\icons8_Toggle_On_28px_1.png" />
+    <None Include="Resources\icons8_Toggle_On_28px.png" />
+    <None Include="Resources\icons8_Toggle_On_25px.png" />
+    <None Include="Resources\icons8_Delete_25px_1.png" />
+    <None Include="Resources\icons8_Delete_25px.png" />
+    <None Include="Resources\icons8_Delete_30px_3.png" />
+    <None Include="Resources\icons8_Delete_30px_2.png" />
+    <None Include="Resources\icons8_Purchase_Order_30px_11.png" />
+    <None Include="Resources\icons8_Purchase_Order_30px_1.png" />
+    <None Include="Resources\LOGO 256 - Copia.png" />
+    <None Include="Resources\LOGO 192 - Copia.png" />
+    <None Include="Resources\LOGO 384 - Copia.png" />
+    <None Include="Resources\LOGO 384.png" />
+    <None Include="Resources\icons8_Return_Purchase_25px.png" />
+    <None Include="Resources\icons8_Clear_Shopping_Cart_25px.png" />
+    <None Include="Resources\icons8_Purchase_Order_25px.png" />
+    <None Include="Resources\icons8_Purchase_Order_32px_2.png" />
+    <None Include="Resources\icons8_Buy_32px_2.png" />
+    <None Include="Resources\icons8_Buy_32px.png" />
+    <None Include="Resources\icons8_Buying_28px.png" />
+    <None Include="Resources\icons8_Restore_Window_28px.png" />
+    <None Include="Resources\icons8_Restore_Window_28px_1.png" />
+    <None Include="Resources\icons8_Minimize_Window_28px_1.png" />
+    <None Include="Resources\icons8_Maximize_Window_28px_1.png" />
+    <None Include="Resources\icons8_Close_Window_28px.png" />
+    <None Include="Resources\icons8_Minimize_Window_28px1.png" />
+    <None Include="Resources\icons8_Maximize_Window_28px1.png" />
+    <None Include="Resources\icons8_Close_Window_28px_11.png" />
+    <None Include="Resources\icons8_Minimize_Window_28px.png" />
+    <None Include="Resources\icons8_Maximize_Window_28px.png" />
+    <None Include="Resources\icons8_Close_Window_28px_1.png" />
+    <None Include="Resources\icons8_Minimize_Window_25px.png" />
+    <None Include="Resources\icons8_Maximize_Window_25px.png" />
+    <None Include="Resources\icons8_Close_Window_25px.png" />
+    <None Include="Resources\icons8_Minimize_Window_24px_3.png" />
+    <None Include="Resources\icons8_Close_Window_24px_31.png" />
+    <None Include="Resources\icons8_Attention_22px.png" />
+    <None Include="Resources\icons8_Attention_26px.png" />
+    <None Include="Resources\icons8_Attention_28px.png" />
+    <None Include="Resources\icons8_Attention_30px.png" />
+    <None Include="Resources\LOGO 1921.png" />
+    <None Include="Resources\LOGO 192.png" />
+    <None Include="Resources\LOGO 2048_1.png" />
+    <None Include="Resources\LOGO 2048_2.png" />
+    <None Include="Resources\icons8_Buying_30px_11.png" />
+    <None Include="Resources\icons8_Product_30px_22.png" />
+    <None Include="Resources\icons8_Trolley_30px_11.png" />
+    <None Include="Resources\icons8_User_30px_12.png" />
+    <None Include="Resources\icons8_User_20px_31.png" />
+    <None Include="Resources\logo color 1921.png" />
+    <None Include="Resources\icons8_Close_Window_24px_2.png" />
+    <None Include="Resources\icons8_Close_Window_24px_3.png" />
+    <None Include="Resources\shopping_cart_301.png" />
+    <None Include="Resources\shopping_cart_24.png" />
+    <None Include="Resources\icons8_Available_Updates_30px.png" />
+    <None Include="Resources\icons8_Product_30px_21.png" />
+    <None Include="Resources\icons8_User_30px_3.png" />
+    <None Include="Resources\icons8_Buying_30px_1.png" />
+    <None Include="Resources\icons8_Product_30px_2.png" />
+    <None Include="Resources\icons8_Trolley_30px_1.png" />
+    <None Include="Resources\icons8_Exit_30px_1.png" />
+    <None Include="Resources\icons8_Database_20px_3.png" />
+    <None Include="Resources\icons8_Workstation_20px_3.png" />
+    <None Include="Resources\icons8_User_20px_3.png" />
+    <None Include="Resources\icons8_Trolley_30px.png" />
+    <None Include="Resources\icons8_User_30px_11.png" />
+    <None Include="Resources\icons8_User_34px.png" />
+    <None Include="Resources\icons8_Exit_30px.png" />
+    <None Include="Resources\icons8_Product_30px_1.png" />
+    <None Include="Resources\icons8_Product_30px.png" />
+    <None Include="Resources\icons8_User_32px_1.png" />
+    <None Include="Resources\icons8_User_30px_1.png" />
+    <None Include="Resources\icons8_Buying_30px.png" />
+    <None Include="Resources\shopping_cart_30.png" />
+    <None Include="Resources\shopping_cart_48.png" />
+    <None Include="Resources\shopping_cart_32.png" />
+    <None Include="Resources\logo color 2048.png" />
+    <None Include="Resources\icons8_User_20px_1.png" />
+    <None Include="Resources\icons8_Database_20px_1.png" />
+    <None Include="Resources\icons8_Workstation_20px_2.png" />
+    <None Include="Resources\icons8_User_20px.png" />
+    <None Include="Resources\icons8_Checkmark_20px.png" />
+    <None Include="Resources\icons8_Delete_20px.png" />
+    <None Include="Resources\icons8_Delete_24px.png" />
+    <None Include="Resources\icons8_Checkmark_24px.png" />
+    <None Include="Resources\icons8_Checkmark_28px_2.png" />
+    <None Include="Resources\icons8_Checkmark_30px_1.png" />
+    <None Include="Resources\icons8_Password_30px_1.png" />
+    <None Include="Resources\icons8_User_28px_1.png" />
+    <None Include="Resources\icons8_User_30px.png" />
+    <None Include="Resources\logo color 192.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Negocios\Negocios.csproj">
+      <Project>{f5e30bbf-0b91-4b95-8f56-7de4ba0a1e72}</Project>
+      <Name>Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ObjetoTransferencia\ObjetoTransferencia.csproj">
+      <Project>{128406e2-653a-49e1-8557-b30a459036f6}</Project>
+      <Name>ObjetoTransferencia</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
